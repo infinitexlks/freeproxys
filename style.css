@@ -1,59 +1,71 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: radial-gradient(circle at top, #0f172a, #020617);
+    background: radial-gradient(circle at top, #020617, #000000);
     color: white;
     min-height: 100vh;
 }
 
-/* bigger container */
+/* container */
 .container {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 70px;
     padding: 20px;
 }
 
-/* bigger title */
+/* title glow */
 .title {
-    font-size: 56px;
+    font-size: 58px;
     letter-spacing: 6px;
-    color: #38bdf8;
-    text-shadow: 0 0 25px #38bdf8;
+    color: #22d3ee;
+    text-shadow: 0 0 20px #22d3ee;
 }
 
+/* random text box */
+.random-text {
+    margin: 15px auto;
+    font-size: 16px;
+    color: #a5b4fc;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid rgba(34, 211, 238, 0.2);
+    border-radius: 10px;
+    background: rgba(255,255,255,0.03);
+}
+
+/* subtitle */
 .subtitle {
     color: #94a3b8;
     margin-bottom: 40px;
-    font-size: 18px;
 }
 
-/* grid layout instead of column */
+/* grid links */
 .link-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 18px;
     max-width: 900px;
     margin: auto;
 }
 
-/* bigger buttons */
+/* buttons */
 .link {
-    padding: 18px;
-    border-radius: 14px;
+    padding: 16px;
+    border-radius: 12px;
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 17px;
 
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(56, 189, 248, 0.3);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(34, 211, 238, 0.25);
 
     backdrop-filter: blur(10px);
     transition: 0.3s;
 }
 
-/* glow hover */
+/* hover glow */
 .link:hover {
-    transform: translateY(-6px) scale(1.05);
-    border-color: #38bdf8;
-    box-shadow: 0 0 15px #38bdf8, 0 0 45px rgba(56,189,248,0.5);
+    transform: translateY(-5px) scale(1.04);
+    border-color: #22d3ee;
+    box-shadow: 0 0 15px #22d3ee, 0 0 40px rgba(34,211,238,0.4);
 }
