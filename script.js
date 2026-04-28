@@ -1,47 +1,34 @@
-const links = [
-    {
-        name: "Ruby",
-        url: "https://misterge-laoshi.global.ssl.fastly.net/?utm_source=ubghub.org&utm_medium=referral&utm_campaign=ubghub.org",
-        show: true
-    },
-    {
-        name: "PeteZah",
-        url: "https://petezahgames.com/?utm_source=ubghub.org&utm_medium=referral&utm_campaign=ubghub.org",
-        show: true
-    },
-    {
-        name: "EliteGamez",
-        url: "https://elite-gamez.github.io/?utm_source=ubghub.org&utm_medium=referral&utm_campaign=ubghub.org",
-        show: true
-    },
-    {
-        name: "PizaGame",
-        url: "https://pizagame.com/?utm_source=ubghub.org&utm_medium=referral&utm_campaign=ubghub.org",
-        show: true
-    },
-    {
-        name: "FrogArcade",
-        url: "https://frogiesarcade.win/?utm_source=ubghub.org&utm_medium=referral&utm_campaign=ubghub.org",
-        show: true
-    },
-    {
-        name: "Extra Link (won't show)",
-        url: "https://example.com",
-        show: false
-    }
-];
+/* Container for links */
+.link-container {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  z-index: 10;
+}
 
-const container = document.getElementById("linkContainer");
+ /* Style for each link */
+.link {
+  padding: 12px 24px;
+  border-radius: 50px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
 
-// only show links where show === true
-links
-    .filter(link => link.show)
-    .forEach(link => {
-        const a = document.createElement("a");
-        a.href = link.url;
-        a.textContent = link.name;
-        a.target = "_blank";
-        a.className = "link";
+.link:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
 
-        container.appendChild(a);
-    });
+.link.hidden {
+  display: none;
+}
+
+.link.show {
+  display: block;
+}
