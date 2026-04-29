@@ -1,6 +1,6 @@
 /* background */
 body {
-  background-image: url('images/background.jpg');
+  background-image: url('background.mp4');
   background-size: cover;        /* Makes it fill the screen */
   background-position: center;   /* Centers the image */
   background-repeat: no-repeat;  /* Prevents tiling */
