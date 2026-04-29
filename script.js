@@ -3,28 +3,28 @@
 ========================= */
 const links = [
   {
-    name: "Ruby",
-    url: "https://misterge-laoshi.global.ssl.fastly.net/?utm_source=ubghub.org&utm_medium=referral&utm_campaign=ubghub.org",
+    name: "Lunar",
+    url: "https://linewize.rachelsfinds.com/",
     show: true
   },
   {
-    name: "PeteZah",
-    url: "https://petezahgames.com/?utm_source=ubghub.org&utm_medium=referral&utm_campaign=ubghub.org",
+    name: "Utopia",
+    url: "https://bum.education",
     show: true
   },
   {
-    name: "EliteGamez",
-    url: "https://elite-gamez.github.io/?utm_source=ubghub.org&utm_medium=referral&utm_campaign=ubghub.org",
+    name: "Lucide",
+    url: "https://cdn.jsdelivr.net/gh/lucideproxy/svg@latest/logo.svg#/",
     show: true
   },
   {
-    name: "PizaGame",
-    url: "https://pizagame.com/?utm_source=ubghub.org&utm_medium=referral&utm_campaign=ubghub.org",
+    name: "Velara",
+    url: "https://usevelara.xyz/",
     show: true
   },
   {
-    name: "FrogArcade",
-    url: "https://frogiesarcade.win/?utm_source=ubghub.org&utm_medium=referral&utm_campaign=ubghub.org",
+    name: "Galaxy",
+    url: "https://youareagooner.ovie.gob.mx/onboarding/",
     show: true
   }
 ];
