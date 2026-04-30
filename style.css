@@ -41,7 +41,6 @@ body {
   object-fit: cover;
 }
 
-/* dark overlay */
 .background::after {
   content: "";
   position: absolute;
@@ -50,7 +49,7 @@ body {
 }
 
 /* =========================
-   FORCE UI ABOVE VIDEO
+   UI ABOVE VIDEO
 ========================= */
 body > *:not(.background) {
   position: relative;
@@ -66,7 +65,7 @@ h1 {
 }
 
 /* =========================
-   GLASS TOGGLE BUTTON
+   BUTTON (GLASS)
 ========================= */
 #toggleButton {
   width: 100px;
@@ -78,7 +77,6 @@ h1 {
 
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
 
   color: #a0c8f0;
   font-weight: bold;
@@ -88,7 +86,6 @@ h1 {
   justify-content: center;
 
   cursor: pointer;
-
   margin-bottom: 30px;
 
   box-shadow:
@@ -98,26 +95,23 @@ h1 {
   transition: all 0.3s ease;
 }
 
-/* =========================
-   BUTTON HOVER (NEON GLASS)
-========================= */
 #toggleButton:hover {
   transform: scale(1.1);
-
   background: rgba(102, 204, 255, 0.25);
-
   border: 1px solid rgba(102, 204, 255, 0.8);
-
-  color: #ffffff;
-
+  color: white;
   box-shadow:
     0 0 25px rgba(102, 204, 255, 0.7),
-    0 0 60px rgba(102, 204, 255, 0.3),
-    inset 0 0 15px rgba(255, 255, 255, 0.1);
+    0 0 60px rgba(102, 204, 255, 0.3);
+}
+
+/* CLICK EFFECT */
+#toggleButton:active {
+  transform: scale(0.95);
 }
 
 /* =========================
-   LINK CONTAINER (GLASS)
+   LINK CONTAINER
 ========================= */
 #linkContainer {
   display: none;
@@ -137,17 +131,16 @@ h1 {
   border: 1px solid rgba(255, 255, 255, 0.15);
 
   box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.4),
-    inset 0 0 20px rgba(255, 255, 255, 0.05);
+    0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
-/* show state */
 #linkContainer.show {
   display: flex;
+  backdrop-filter: blur(20px);
 }
 
 /* =========================
-   LINKS (GLASS + HOVER)
+   LINKS + ANIMATION
 ========================= */
 .link {
   padding: 12px 24px;
@@ -161,6 +154,11 @@ h1 {
 
   color: #a0c8f0;
   text-decoration: none;
+
+  opacity: 0;
+  transform: translateY(15px);
+
+  animation: fadeIn 0.4s forwards;
 
   transition: all 0.3s ease;
 }
@@ -177,4 +175,12 @@ h1 {
   box-shadow:
     0 0 25px rgba(102, 204, 255, 0.7),
     0 0 60px rgba(102, 204, 255, 0.3);
+}
+
+/* FADE IN ANIMATION */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
